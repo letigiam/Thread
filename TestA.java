@@ -6,9 +6,8 @@ public class TestA extends Thread {
     @Override
     public void run() {
         try{
-            int t = (int )(Math.random()* 2000);
-            sleep (t);
-             System.out.println(getName() + " Arrivata in " + t);
+            sleep((int)(Math.random()* 2000));
+             System.out.println(getName() + " Arrivata in " + getName);
         } catch (InterruptedException e) { }
     }
 }
