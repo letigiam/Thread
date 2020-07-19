@@ -9,9 +9,8 @@ public class TestB implements Runnable {
     @Override
     public void run() {
         try {
-            int t = (int )(Math.random()* 2000);
-            Thread.sleep (t);
-            System.out.println(name + " Arrivata in " + t );
+            Thread.sleep((int )(Math.random()* 2000));
+            System.out.println(name + " Arrivata in ");
         } catch (InterruptedException e) {
         }
 
